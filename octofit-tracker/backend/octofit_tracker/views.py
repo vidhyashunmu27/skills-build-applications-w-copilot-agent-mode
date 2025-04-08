@@ -26,7 +26,7 @@ class WorkoutViewSet(viewsets.ModelViewSet):
 
 @api_view(['GET'])
 def api_root(request, format=None):
-    base_url = 'https://jubilant-dollop-8000.app.github.dev/'
+    base_url = 'https://jubilant-dollop-wr5gjrg67xpfgjj7-8000.app.github.dev/'
     return Response({
         'users': base_url + 'api/users/?format=api',
         'teams': base_url + 'api/teams/?format=api',

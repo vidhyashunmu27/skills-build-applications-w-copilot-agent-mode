@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-4+(k94zw%^k6cqohv501r=64@=w5tisy3p-50bxr0qvp1-1od1
 DEBUG = True
 
 # Allow all hosts
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'jubilant-dollop-8000.app.github.dev']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'jubilant-dollop-wr5gjrg67xpfgjj7-8000.app.github.dev']
 
 
 # Application definition
