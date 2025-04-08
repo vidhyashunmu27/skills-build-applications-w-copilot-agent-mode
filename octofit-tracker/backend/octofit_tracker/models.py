@@ -1,14 +1,17 @@
 from djongo import models
+from djongo.models import ObjectIdField
 
 class User(models.Model):
+    id = ObjectIdField(primary_key=True)  # Change id field to ObjectIdField for compatibility with ArrayField
     username = models.CharField(max_length=100)
-    email = models.EmailField()
+    email = models.EmailField(unique=True)
     password = models.CharField(max_length=100)
 
     def __str__(self):
         return self.username
 
 class Team(models.Model):
+    id = ObjectIdField(primary_key=True)
     name = models.CharField(max_length=100)
     members = models.ArrayField(model_container=User)
 
